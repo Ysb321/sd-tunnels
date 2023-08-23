@@ -46,4 +46,10 @@ def preload(parser: argparse.ArgumentParser):
 
     parser.add_argument(
         "--tunnel-webhook", type=str, help="discord webhook to send tunnel url to"
-    )
+   )
+
+    parser.add_argument(
+        "--multiple",
+        action="store_true",
+        help="use cloudflared and remotemoe",
+  )
